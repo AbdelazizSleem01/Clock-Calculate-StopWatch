@@ -7,15 +7,20 @@ let startTime;
 let elapsedTime = 0;
 let isRunning = false;
 
+// setInterval : هي تكرار الوظيفه على فترات زمنيه معينه والزمن جواها بيكون بالثانيه بكون جواها  فانكشن بتتنفز على حسب الزمن الى انت حاطه 
+// formatTime:هى الحاجه الى هتظهر للمستخدم 
+// now : بتظهر الوقت على اساس الوقت الحالى 
 function startTimer() {
     startTime = Date.now() - elapsedTime;
     timerInterval = setInterval(function printTime() {
       elapsedTime = Date.now() - startTime;
+      // textContent :  لكن الفرق ان التيكست كونتنت بتجيب النص فقط انما الإنر بتجيب السطر الى فيه الأى دى كله هتي لو فيه اسبان مثلا   innerHTML هى زى  
       display.textContent = formatTime(elapsedTime);
     }, 1000);
     isRunning = true;
   }
   
+//clearInterval:  setInterval هى مسود بتعمل  مسح مؤقت عند حد معين انت مديهولها بإستخدام 
   function stopTimer() {
     clearInterval(timerInterval);
     isRunning = false;
