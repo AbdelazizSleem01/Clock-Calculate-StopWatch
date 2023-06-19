@@ -1,0 +1,62 @@
+body{
+    background-color: rgb(191, 186, 186);
+}
+.continer-bigg{
+position:absolute;
+top: 30%;
+left: 40%;
+}
+.continer-bigg  .head{
+    padding-left: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: rgb(9, 9, 168);
+}
+.continer-small{
+    padding-left: 100px;
+    border: 5px solid rgb(209, 135, 15);
+    border-radius: 5px;
+
+}
+
+.start{
+    background-color: green;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    border-radius: 5px;
+    width: 100px;
+    
+    
+}
+.start:hover{
+    opacity: .7;
+    transition: all .5s ease;
+}
+.stop{
+    background-color: rgb(224, 9, 9);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    border-radius: 5px;
+    width: 100px;
+}
+.stop:hover{
+    opacity: .7;
+    transition: all .5s ease;
+
+}
+
+.reset{
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    border-radius: 5px;
+    width: 100px;
+}
+.reset:hover{
+    opacity: .7;
+    transition: all .5s ease;
+
+}
